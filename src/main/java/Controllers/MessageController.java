@@ -1,6 +1,10 @@
 package Controllers;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,6 +19,14 @@ public class MessageController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String uri = request.getRequestURI();
+		
+		if (uri.equals("/a.msg")) {
+			
+			Scanner sc = new Scanner(System.in);
+			int num = Integer.parseInt(sc.nextLine());
+			
+			
+		}
 	
 	}
 
